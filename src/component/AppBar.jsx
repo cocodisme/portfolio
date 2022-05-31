@@ -98,7 +98,7 @@ const ResponsiveAppBar = ({data}) => {
             >
               {data.map((page,i) => (
               <Link key={i} style= {{textDecoration:'none',color:'white'}} to={page.onClick} >
-                <MenuItem  onClick={page.onClick}>
+                <MenuItem >
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
                 </Link >
@@ -129,7 +129,6 @@ const ResponsiveAppBar = ({data}) => {
        <Link key={i} style= {{textDecoration:'none',color:'white'}} to={page.onClick}>
               <Button
                 
-                onClick={page.onClick}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page.name}

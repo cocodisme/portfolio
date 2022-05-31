@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Typography from '@mui/material/Typography';
+import emailjs from 'emailjs-com'
 
 function Copyright(props) {
   return (
@@ -26,13 +27,14 @@ function Copyright(props) {
 
 
 export default function SignInSide() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+  const [disabled,setDiabled] = React.useState(true)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    emailjs .sendForm('service_6h1qubg','template_gf35ifo',e.target,'BiiZUsIHBaGVxRtSj')
+    .then(res => console.log(res))
+    .catch(err=> console.log(err))
+    
   };
 
   return (
@@ -82,6 +84,15 @@ export default function SignInSide() {
                 margin="normal"
                 required
                 fullWidth
+                id="name"
+                label="Your Name"
+                name="name"
+                autoComplete="off"
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
                 multiline
                 name="message"
                 label="message"
@@ -93,6 +104,7 @@ export default function SignInSide() {
               <Button
                 type="submit"
                 fullWidth
+                disabled={disabled}
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >

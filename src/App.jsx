@@ -5,11 +5,20 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ScrollAnimation from 'react-animate-on-scroll'
 import {BrowserRouter as Router } from 'react-router-dom'
-import Data from './Data.json'
+import ReactLoading from "react-loading";
 
 function App() {
 
-  console.log(Data)
+  const [Data,setData] = React.useState({})
+   const [isLoading, setLoading] = React.useState(true)
+  React.useEffect(()=>{
+    const url = 'https://raw.githubusercontent.com/cocodisme/portfolio/master/src/Data.json'
+   fetch(url)
+  .then(response => response.json())
+  .then(data => {setData(data);setLoading(false)}); 
+    
+  },[])
+  
   const darkTheme = createTheme({
     typography: {
     allVariants: {
@@ -24,6 +33,8 @@ function App() {
   return (
     <>
       <Router>
+        {isLoading ? <div style={{position:'fixed',top:'45%',left:'45%'}}><ReactLoading type="spin" color="#0000FF"
+        height={50} width={50} /></div> :
        <ThemeProvider theme={darkTheme}>
       <AppBar data={Data.AppBar}/>
       <CssBaseline />
@@ -36,6 +47,7 @@ function App() {
          <Contact/>
            </ScrollAnimation>
          </ThemeProvider>
+        }
         </Router>
     </>
   );
