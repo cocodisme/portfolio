@@ -1,0 +1,166 @@
+{
+  "AppBar": [
+    {
+      "name": "Home",
+      "onClick": "#home"
+    },
+    {
+      "name": "About Me",
+      "onClick": "#aboutme"
+    },
+    {
+      "name": "Skills",
+      "onClick": "#skills"
+    },
+    {
+      "name": "Projects",
+      "onClick": "#projects"
+    },
+    {
+      "name": "Contact",
+      "onClick": "#contact"
+    }
+  ],
+  "AboutMe": [
+    {
+      "title": "Who am i ?",
+      "desc": "A Web devloper who is addicted to coffee and Coding and i like to bring unimaginable things into real life"
+    },
+    {
+      "title": "How I'm here",
+      "desc": "A son asked his father (a programmer) why the sun rises in the east, and sets in the west. His response? It works, don’t touch!"
+    },
+    {
+      "title": "My goals",
+      "desc": "I know you smiled for the previous one,thats exactly my goal.. I need to give my love and caring to everyone."
+    }
+  ],
+  "Skill": [
+    {
+      "name": "Html",
+      "logo": "",
+      "value": 50,
+      "color": "#ffcc66"
+    },
+    {
+      "name": "Css",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "Javascript",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "Jquery",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "Bootstrap",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "Material ui",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "PHP",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "laravel",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "Photoshop",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "Figma",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "Mongodb",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "MySql",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "Express js",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    },
+    {
+      "name": "React/React Native",
+      "logo": "",
+      "value": 50,
+      "color": ""
+    }
+  ],
+  "Projects": [
+    {
+      "id": 1,
+      "image": "",
+      "name": "MessyLink",
+      "desc": "fdsgdsfgdsfgsd dsfds ",
+      "isActive": true,
+      "link": ""
+    },
+    {
+      "id": 2,
+      "image": "",
+      "name": "MessyLink",
+      "desc": "fdsgdsfgdsfgsd dsfds ",
+      "isActive": true,
+      "link": ""
+    },
+    {
+      "id": 3,
+      "image": "",
+      "name": "MessyLink",
+      "desc": "fdsgdsfgdsfgsd dsfds ",
+      "isActive": true,
+      "link": ""
+    },
+    {
+      "id": 4,
+      "image": "",
+      "name": "MessyLink",
+      "desc": "fdsgdsfgdsfgsd dsfds ",
+      "isActive": true,
+      "link": ""
+    },
+    {
+      "id": 5,
+      "image": "",
+      "name": "MessyLink",
+      "desc": "fdsgdsfgdsfgsd dsfds ",
+      "isActive": true,
+      "link": ""
+    }
+  ]
+}

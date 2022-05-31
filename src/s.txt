@@ -1,0 +1,94 @@
+AppBar : [
+  {
+    name: 'Home',
+    onClick: '#home'
+  },
+  {
+    name: 'About Me',
+    onClick: "#aboutme"
+  },
+  {
+    name: 'Skills',
+    onClick: "#skills"
+  },
+  {
+    name: 'Projects',
+    onClick: "#projects"
+  },
+  {
+    name: 'Contact',
+    onClick: "#contact"
+  },
+],
+  AboutMe : [
+    {
+      title: 'Who am i ?',
+      desc:'A Web devloper who is addicted to coffee and Coding and i like to bring unimaginable things into real life',
+    },
+    {
+      title: 'How I\'m here',
+      desc:'A son asked his father (a programmer) why the sun rises in the east, and sets in the west. His response? It works, don’t touch!',
+    },
+    {
+      title: 'My goals',
+      desc:'I know you smiled for the previous one,thats exactly my goal.. I need to give my love and caring to everyone.',
+    },
+  ],
+  Skill : [
+    {
+      name:'Html',
+      logo:'',
+    },
+    {
+      name:'Css',
+      logo:'',
+    },
+    {
+      name:'Javascript',
+      logo:'',
+    },
+    {
+      name:'Jquery',
+      logo:'',
+    },
+    {
+      name:'Bootstrap',
+      logo:'',
+    },
+    {
+      name:'Material ui',
+      logo:'',
+    },
+    {
+      name:'PHP',
+      logo:'',
+    },
+    {
+      name:'laravel',
+      logo:'',
+    },
+    {
+      name:'Photoshop',
+      logo:'',
+    },
+    {
+      name:'Figma',
+      logo:'',
+    },
+    {
+      name:'Mongodb',
+      logo:'',
+    },
+    {
+      name:'MySql',
+      logo:'',
+    },
+    {
+      name:'Express js',
+      logo:'',
+    },
+    {
+      name:'React/React Native',
+      logo:'',
+    },
+  ],
