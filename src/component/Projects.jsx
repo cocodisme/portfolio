@@ -30,9 +30,16 @@ export default function Projects({data}) {
 }));
 
   const [expanded, setExpanded] = React.useState(false);
+  const [expandText,setExpandText] = React.useState(false);
   
+  
+  // const handleExpandText = (e) => {
+  //   setExpandText(!expandText)
+  //   console.log(e.currentTarget)
+  // };
   const handleExpandClick = () => {
     setExpanded(!expanded);
+    
   };
     
   
@@ -64,15 +71,19 @@ export default function Projects({data}) {
         {data
         .filter(a => a.id > 3)
         .map((e,i)=>(
-      <Projectlist name={e.name} isActive={e.isActive} desc={e.desc} img={e.image} link={e.link} key={i}/>
+          <>
+      <Projectlist name={e.name}  isActive={e.isActive} desc={e.desc} img={e.image} link={e.link} key={i}/>
+          
+      
+            </>
+          
       ))}
 </Grid>
       </Collapse>
       </div>
   );
-}
 
-function Projectlist (props){
+  function Projectlist (props){
   return (
     <>
        <Grid item xs={12} md={4} lg={4}> 
@@ -101,17 +112,25 @@ function Projectlist (props){
           {props.isActive ? "Online" : "Offline"}
         </Typography>
          <Typography variant="caption" color="text.secondary">
-          {props.desc}
+          {props.desc.slice(0, 160)} ...
         </Typography>
+        
       </CardContent>
       
-      {props.link != '' &&
+      
       <CardActions>
+        {props.link != '' &&
         <Button size="small">Learn More</Button>
+        }
+        
+  
       </CardActions>
-      }
+      
     </Card>
           </Grid>
     </>
   )
 }
+  
+}
+

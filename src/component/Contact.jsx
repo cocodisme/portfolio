@@ -27,13 +27,19 @@ function Copyright(props) {
 
 
 export default function SignInSide() {
-  const [disabled,setDiabled] = React.useState(true)
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    emailjs .sendForm('service_6h1qubg','template_gf35ifo',e.target,'BiiZUsIHBaGVxRtSj')
-    .then(res => console.log(res))
-    .catch(err=> console.log(err))
+    if (e.target[0].value && e.target[2].value && e.target[4].value) {
+      emailjs .sendForm('service_6h1qubg','template_gf35ifo',e.target,'BiiZUsIHBaGVxRtSj')
+    .then(res => {alert ("Mail Sent Succussfully")})
+    .catch(err=> {alert ("Server Error")})
+    document.getElementById("contactform").reset();
+      
+    } else {
+      alert ("Please Fill all inputs")
+      document.getElementById("contactform").reset();
+    }
+    
     
   };
 
@@ -70,7 +76,7 @@ export default function SignInSide() {
             <Typography component="h1" variant="h5">
               Contact Me
             </Typography>
-            <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
+            <Box id="contactform" component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
                 margin="normal"
                 required
@@ -104,7 +110,6 @@ export default function SignInSide() {
               <Button
                 type="submit"
                 fullWidth
-                disabled={disabled}
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
