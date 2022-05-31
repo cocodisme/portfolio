@@ -9,7 +9,7 @@ export default function Home() {
   
   return(
     <>
-      <div id="home" style={style.home} >
+      <div name="home" id="home" style={style.home} >
         <Box sx={{ml:13,mt:15}}>
       <Typography component='div' variant ='h4'>
         Hello,

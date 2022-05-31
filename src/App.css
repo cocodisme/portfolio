@@ -30,6 +30,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
-html {
-  scroll-behavior: smooth;
+
+.active{
+  color:red;
+  transition: 300ms;
+  text-decoration: underline;
 }

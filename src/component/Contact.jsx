@@ -44,7 +44,7 @@ export default function SignInSide() {
   };
 
   return (
-    <div id="contact">
+    <div name="contact" id="contact">
       <Grid container component="main" sx={{ height: '100vh' }}>
         <Grid
           item

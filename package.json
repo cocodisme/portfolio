@@ -2,7 +2,7 @@
   "name": "ReplitReactjsProject",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
+    "dev": "vie",
     "build": "vite build",
     "serve": "vite preview"
   },
@@ -22,6 +22,7 @@
     "react-loading": "^2.0.3",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
+    "react-scroll": "^1.8.7",
     "typewriter-effect": "^2.18.2",
     "vite": "^2.3.8"
   }

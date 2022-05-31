@@ -10,7 +10,7 @@ export default function Skills({data}) {
   
   return (
     <>
-      <div id="skills" style={style.AboutMe}>
+      <div name="skills" id="skills" style={style.AboutMe}>
         <Typography gutterBottom variant="h3" sx={{my:5}} align='center' component="div">
             Skills
           </Typography>
@@ -25,10 +25,10 @@ export default function Skills({data}) {
         <Typography gutterBottom variant="h5" sx={{my:5}} align='center' component="div">
             Scores
           </Typography>
-        <Box sx={{p:3,}} >
+        <Box sx={{p:3}} >
           {data.map((e,i)=>(
            <Box display='flex'>
-              <Avatar sx={{width:'4rem',m:1,height:'4rem'}} alt="skill" src="" />
+              <Avatar sx={{width:'4rem',m:1,height:'4rem'}} alt="skill" src={e.logo} />
               <Typography gutterBottom variant="h7" sx={{m:'auto'}} align='center'>
                 {e.name}
           </Typography>

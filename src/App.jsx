@@ -36,12 +36,12 @@ function App() {
         {isLoading ? <div style={{position:'fixed',top:'45%',left:'45%'}}><ReactLoading type="spin" color="#0000FF"
         height={50} width={50} /></div> :
        <ThemeProvider theme={darkTheme}>
-      <AppBar data={Data.AppBar}/>
+      <AppBar avatar={Data.nav} data={Data.AppBar}/>
       <CssBaseline />
          <ScrollAnimation animateIn='fadeIn'>
          <Home/>
          <ScrollToTop/>
-         <AboutMe data={Data.AboutMe}/>
+         <AboutMe avatar={Data.avatar} data={Data.AboutMe}/>
          <Skills data={Data.Skill}/>
          <Projects data={Data.Projects}/>
          <Contact/>

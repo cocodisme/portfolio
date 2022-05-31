@@ -13,10 +13,11 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import CodeIcon from '@mui/icons-material/Code';
 import assets from '../constant/assets'
-import {Link } from 'react-router-dom'
+import { Link , animateScroll as scroll } from 'react-scroll'
 
 
-const ResponsiveAppBar = ({data}) => {
+
+const ResponsiveAppBar = ({data,avatar}) => {
 
   
   const [navbar, setNavbar] = React.useState(false)
@@ -97,12 +98,13 @@ const ResponsiveAppBar = ({data}) => {
               }}
             >
               {data.map((page,i) => (
-              <Link key={i} style= {{textDecoration:'none',color:'white'}} to={page.onClick} >
+              <Link to={page.onClick} spy={true} smooth={true}  >
                 <MenuItem >
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
-                </Link >
-              ))}
+              </Link>
+                )
+            )}
               
             </Menu>
           </Box>
@@ -126,7 +128,7 @@ const ResponsiveAppBar = ({data}) => {
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {data.map((page,i) => (
-       <Link key={i} style= {{textDecoration:'none',color:'white'}} to={page.onClick}>
+       <Link to={page.onClick} spy={true} smooth={true}  >
               <Button
                 
                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -139,7 +141,7 @@ const ResponsiveAppBar = ({data}) => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Sundar">
-                <Avatar alt="Sundar" src={assets.nav} />
+                <Avatar alt="Sundar" src={avatar} />
             </Tooltip>
           </Box>
         </Toolbar>

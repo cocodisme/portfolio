@@ -8,13 +8,12 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
-import assets from '../constant/assets';
 
-export default function AboutMe({data}){
+export default function AboutMe({data,avatar}){
   
   return(
     <>
-      <div id="aboutme" style={style.AboutMe}>
+      <div name="aboutme" id="aboutme" style={style.AboutMe}>
    <Typography gutterBottom variant="h3" sx={{my:5}} align='center' component="div">
             About Me
           </Typography>
@@ -41,7 +40,7 @@ export default function AboutMe({data}){
                        }}>
     
         <CardContent>
-        <Avatar sx={{p:2,height:90,width:90}} alt="avatar" src={assets.avatar} />
+        <Avatar sx={{p:2,height:90,width:90}} alt="avatar" src={avatar} />
       
           <Typography gutterBottom variant="h5" component="div">
             {e.title}
