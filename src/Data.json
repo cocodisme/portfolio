@@ -1,1 +1,168 @@
-{ "avatar": "https://i.postimg.cc/02BpM5Bs/Pics-Art-01-09-02-32-05.jpg", "nav": "https://i.postimg.cc/qvmyVJ2Y/Pics-Art-01-07-02-10-36.png", "AppBar": [ { "name": "Home", "onClick": "home" }, { "name": "About Me", "onClick": "aboutme" }, { "name": "Skills", "onClick": "skills" }, { "name": "Projects", "onClick": "projects" }, { "name": "Contact", "onClick": "contact" } ], "AboutMe": [ { "title": "Who am i ?", "desc": "A Web devloper who is addicted to coffee and Coding and i like to bring unimaginable things into real life" }, { "title": "How I'm here", "desc": "A son asked his father (a programmer) why the sun rises in the east, and sets in the west. His response? It works, don’t touch!" }, { "title": "My goals", "desc": "I know you smiled for the previous one,thats exactly my goal.. I need to give my love and caring to everyone." } ], "Skill": [ { "name": "Html", "logo": "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png", "value": 98, "color": "#ffcc66" }, { "name": "Css", "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg", "value": 70, "color": "#0066ff" }, { "name": "Javascript", "logo": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg", "value": 90, "color": "#ffd11a" }, { "name": "Jquery", "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg", "value": 60, "color": "#66ccff" }, { "name": "Bootstrap", "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg", "value": 80, "color": "#cc33ff" }, { "name": "Material ui", "logo": "https://mui.com/static/logo.png", "value": 50, "color": "#3399ff" }, { "name": "PHP", "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg", "value": 70, "color": "#cc99ff" }, { "name": "laravel", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png", "value": 40, "color": "#ff3300" }, { "name": "Photoshop", "logo": "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg", "value": 70, "color": "#0033cc" }, { "name": "Figma", "logo": "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg", "value": 20, "color": "#ff6600" }, { "name": "Mongodb", "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg", "value": 90, "color": "#66ff33" }, { "name": "MySql", "logo": "https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png", "value": 80, "color": "#33ccff" }, { "name": "Express js", "logo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png", "value": 94, "color": "#66ff99" }, { "name": "React/React Native", "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", "value": 87, "color": "#33ccff" } ], "Projects": [ { "id": 1, "image": "https://d33wubrfki0l68.cloudfront.net/d382c30e7f58cfe6781317bec92a97a12570c613/2ce1a/images/defined-tree.jpg", "name": "MessyLink", "desc": "This is a clone of link tree in which you can add multiple links of your wish and add custom wallpapers,stylings,color and lot more.. Although its has many features, its closed now due to maintance issue.. ", "isActive": false, "link": "" }, { "id": 2, "image": "https://svgrepo.com/show/255764/game-controller-gaming.svg", "name": "Notu", "desc": "Notu is the first Tamil community website for gaming , its used to populate and encourage the game streamers across other platforms.. Its has many html5 games tooo. But due to lot of crashes its cloed for now.. I will do this once i got my finance stable in future..", "isActive": false, "link": "" }, { "id": 3, "image": "https://www.svgrepo.com/show/89890/chat.svg", "name": "Muchat", "desc": "Its a simple react app,made using material ui .. It uses flask as backend to connect to chat api, we can chat with this bot of your desired partner's name,it has darkmode for long time chatting with your partner.. ", "isActive": true, "link": "https://muchat.ml" }, { "id": 4, "image": "https://kindpng.com/picc/m/28-284618_file-antu-google-music-svg-google-music-icons.png", "name": "Vibecast", "desc": "made for an hackathon.. Its a spotify clone made in MERN stack , it uses rss feed to upload ,download,listen,add to fav your podcast.. Even though we failed that hackathon its, a good a app and appreciatedby many senior developers", "isActive": false, "link": "" }, { "id": 5, "image": "https://svgrepo.com/show/765/library.svg", "name": "LibReader", "desc": "It's a python app used for saving your fav books into your account.. Its made for educational purpose and its illegal to publish copyrighted books online", "isActive": false, "link": "" } ] }
+{
+  "avatar": "https://i.postimg.cc/02BpM5Bs/Pics-Art-01-09-02-32-05.jpg",
+  "nav": "https://i.postimg.cc/qvmyVJ2Y/Pics-Art-01-07-02-10-36.png",
+  "AppBar": [
+    {
+      "name": "Home",
+      "onClick": "home"
+    },
+    {
+      "name": "About Me",
+      "onClick": "aboutme"
+    },
+    {
+      "name": "Skills",
+      "onClick": "skills"
+    },
+    {
+      "name": "Projects",
+      "onClick": "projects"
+    },
+    {
+      "name": "Contact",
+      "onClick": "contact"
+    }
+  ],
+  "AboutMe": [
+    {
+      "title": "Who am i ?",
+      "desc": "A Web devloper who is addicted to coffee and Coding and i like to bring unimaginable things into real life"
+    },
+    {
+      "title": "How I'm here",
+      "desc": "A son asked his father (a programmer) why the sun rises in the east, and sets in the west. His response? It works, don’t touch!"
+    },
+    {
+      "title": "My goals",
+      "desc": "I know you smiled for the previous one,thats exactly my goal.. I need to give my love and caring to everyone."
+    }
+  ],
+  "Skill": [
+    {
+      "name": "Html",
+      "logo": "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
+      "value": 98,
+      "color": "#ffcc66"
+    },
+    {
+      "name": "Css",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+      "value": 70,
+      "color": "#0066ff"
+    },
+    {
+      "name": "Javascript",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+      "value": 90,
+      "color": "#ffd11a"
+    },
+    {
+      "name": "Jquery",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg",
+      "value": 60,
+      "color": "#66ccff"
+    },
+    {
+      "name": "Bootstrap",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+      "value": 80,
+      "color": "#cc33ff"
+    },
+    {
+      "name": "Material ui",
+      "logo": "https://mui.com/static/logo.png",
+      "value": 50,
+      "color": "#3399ff"
+    },
+    {
+      "name": "PHP",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+      "value": 70,
+      "color": "#cc99ff"
+    },
+    {
+      "name": "laravel",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png",
+      "value": 40,
+      "color": "#ff3300"
+    },
+    {
+      "name": "Photoshop",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
+      "value": 70,
+      "color": "#0033cc"
+    },
+    {
+      "name": "Figma",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+      "value": 20,
+      "color": "#ff6600"
+    },
+    {
+      "name": "Mongodb",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+      "value": 90,
+      "color": "#66ff33"
+    },
+    {
+      "name": "MySql",
+      "logo": "https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png",
+      "value": 80,
+      "color": "#33ccff"
+    },
+    {
+      "name": "Express js",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+      "value": 94,
+      "color": "#66ff99"
+    },
+    {
+      "name": "React/React Native",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      "value": 87,
+      "color": "#33ccff"
+    }
+  ],
+  "Projects": [
+    {
+      "id": 1,
+      "image": "https://d33wubrfki0l68.cloudfront.net/d382c30e7f58cfe6781317bec92a97a12570c613/2ce1a/images/defined-tree.jpg",
+      "name": "MessyLink",
+      "desc": "This is a clone of link tree in which you can add multiple links of your wish and add custom wallpapers,stylings,color and lot more.. Although its has many features, its closed now due to maintance issue.. ",
+      "isActive": false,
+      "link": ""
+    },
+    {
+      "id": 2,
+      "image": "https://svgrepo.com/show/255764/game-controller-gaming.svg",
+      "name": "Notu",
+      "desc": "Notu is the first Tamil community website for gaming , its used to populate and encourage the game streamers across other platforms.. Its has many html5 games tooo. But due to lot of crashes its cloed for now.. I will do this once i got my finance stable in future..",
+      "isActive": false,
+      "link": ""
+    },
+    {
+      "id": 3,
+      "image": "https://www.svgrepo.com/show/89890/chat.svg",
+      "name": "Muchat",
+      "desc": "Its a simple react app,made using material ui .. It uses flask as backend to connect to chat api, we can chat with this bot of your desired partner's name,it has darkmode for long time chatting with your partner.. ",
+      "isActive": true,
+      "link": "https://muchat.ml"
+    },
+    {
+      "id": 4,
+      "image": "https://kindpng.com/picc/m/28-284618_file-antu-google-music-svg-google-music-icons.png",
+      "name": "Vibecast",
+      "desc": "made for an hackathon.. Its a spotify clone made in MERN stack , it uses rss feed to upload ,download,listen,add to fav your podcast.. Even though we failed that hackathon its, a good a app and appreciatedby many senior developers",
+      "isActive": false,
+      "link": ""
+    },
+    {
+      "id": 5,
+      "image": "https://svgrepo.com/show/765/library.svg",
+      "name": "LibReader",
+      "desc": "It's a python app used for saving your fav books into your account.. Its made for educational purpose and its illegal to publish copyrighted books online",
+      "isActive": false,
+      "link": ""
+    }
+  ]
+}
